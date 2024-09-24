@@ -9,7 +9,7 @@ public class StepDefinitionSubtract {
     @When("I press Subtract")
     public void iPressSubtract() {
         CalculatorController controller = new CalculatorController();
-        StepDefinitionAddition.result = controller.subtract(StepDefinitionAddition.numbers.get(0), StepDefinitionAddition.numbers.get(1));
+        StepDefinition.result = controller.subtract(StepDefinition.numbers.get(0), StepDefinition.numbers.get(1));
     }
 
 }
