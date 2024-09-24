@@ -7,12 +7,10 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class StepdefAdd {
 
-
     @When("press Add")
     public void pressAdd() {
         CalculatorController controller = new CalculatorController();
         StepDefinition.result = controller.add(StepDefinition.numbers);
     }
-
 
 }

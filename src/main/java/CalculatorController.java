@@ -2,20 +2,24 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class CalculatorController {
-    public int add(List<Integer> numbers) {
-        int result=0;
-        for (Integer number : numbers) {
+    public double add(List<Double> numbers) {
+        double result = 0;
+        for (Double number : numbers) {
             result += number;
         }
         return result;
     }
 
-    public int modulus(ArrayList<Integer> numbersForModulus) {
+    public double modulus(ArrayList<Double> numbersForModulus) {
         return numbersForModulus.get(0) % numbersForModulus.get(1);
     }
 
-    public int subtract(Integer integer, Integer integer1) {
-        return 0;
+    public double subtract(List<Double> numbers) {
+        double result = numbers.get(0);
+        for (int i = 1; i < numbers.size(); i++) {
+            result -= numbers.get(i);
+        }
+        return result;
     }
 
     public double divide(double double1, double double2) {
