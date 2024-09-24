@@ -13,4 +13,8 @@ public class CalculatorController {
     public int modulus(ArrayList<Integer> numbersForModulus) {
         return numbersForModulus.get(0) % numbersForModulus.get(1);
     }
+
+    public int subtract(Integer integer, Integer integer1) {
+        return 0;
+    }
 }
