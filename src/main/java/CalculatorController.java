@@ -17,4 +17,9 @@ public class CalculatorController {
     public int subtract(Integer integer, Integer integer1) {
         return 0;
     }
+
+    public double divide(double double1, double double2) {
+        double result = double1 / double2;
+        return result;
+    }
 }
