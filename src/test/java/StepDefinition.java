@@ -17,5 +17,6 @@ public class StepDefinition {
     @Then("I want to see the result {int} in my display.")
     public void iWantToSeeTheResultInMyDisplay(int arg0) {
         assertEquals(arg0, result);
+        numbers.clear();
     }
 }
