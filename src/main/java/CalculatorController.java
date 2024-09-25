@@ -22,8 +22,11 @@ public class CalculatorController {
         return result;
     }
 
-    public double divide(double double1, double double2) {
-        double result = double1 / double2;
+    public double divide(List<Double> numbers) {
+        double result = numbers.get(0);
+        for (int i = 1; i < numbers.size(); i++) {
+            result /= numbers.get(i);
+        }
         return result;
     }
 }
