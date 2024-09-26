@@ -30,15 +30,19 @@ public class CalculatorController {
         return result;
     }
 
-    public double percentageOf(double a, double b) {
-        return a/100*b;
+    public double percentageOf(List<Double> numbers) {
+        return numbers.get(0) / 100 * numbers.get(1);
     }
 
-    public double getPercent(Double a, Double b) {
-        return a/b*100;
+    public double getPercent(List<Double> numbers) {
+        return numbers.get(0) / numbers.get(1) * 100;
     }
 
-    public double multiply(double a, double b) {
-        return a*b;
+    public double multiply(List<Double> numbers) {
+        double result = 1.0;
+        for (double number : numbers) {
+            result *= number;
+        }
+        return result;
     }
 }
