@@ -37,4 +37,8 @@ public class CalculatorController {
     public double getPercent(Double a, Double b) {
         return a/b*100;
     }
+
+    public double multiply(double a, double b) {
+        return a*b;
+    }
 }
