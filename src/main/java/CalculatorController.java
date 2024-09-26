@@ -14,8 +14,20 @@ public class CalculatorController {
         return numbersForModulus.get(0) % numbersForModulus.get(1);
     }
 
-    public double subtract(double a, double b) {
-        return 0;
+    public double subtract(List<Double> numbers) {
+        double result = numbers.get(0);
+        for (int i = 1; i < numbers.size(); i++) {
+            result -= numbers.get(i);
+        }
+        return result;
+    }
+
+    public double divide(List<Double> numbers) {
+        double result = numbers.get(0);
+        for (int i = 1; i < numbers.size(); i++) {
+            result /= numbers.get(i);
+        }
+        return result;
     }
 
     public double percentageOf(double a, double b) {
