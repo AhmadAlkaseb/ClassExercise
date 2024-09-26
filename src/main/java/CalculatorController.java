@@ -4,7 +4,7 @@ import java.util.List;
 public class CalculatorController {
     public double add(List<Double> numbers) {
         double result = 0;
-        for (Double number : numbers) {
+        for (double number : numbers) {
             result += number;
         }
         return result;
@@ -28,5 +28,17 @@ public class CalculatorController {
             result /= numbers.get(i);
         }
         return result;
+    }
+
+    public double percentageOf(double a, double b) {
+        return a/100*b;
+    }
+
+    public double getPercent(Double a, Double b) {
+        return a/b*100;
+    }
+
+    public double multiply(double a, double b) {
+        return a*b;
     }
 }
