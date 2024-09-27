@@ -9,12 +9,12 @@ public class StepDefPercent {
     @When("I click Calculate Percentage")
     public void iClickCalculatePercentage() {
         CalculatorController controller = new CalculatorController();
-        StepDefinition.result = controller.percentageOf(StepDefinition.numbers.get(0), StepDefinition.numbers.get(1));
+        StepDefinition.result = controller.percentageOf(StepDefinition.numbers);
     }
 
     @When("I click Get Percent")
     public void iClickGetPercent() {
         CalculatorController controller = new CalculatorController();
-        StepDefinition.result = controller.getPercent(StepDefinition.numbers.get(0), StepDefinition.numbers.get(1));
+        StepDefinition.result = controller.getPercent(StepDefinition.numbers);
     }
 }
